@@ -1,0 +1,405 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{92671804-EEE4-430E-A0AC-790874BF8CFF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TA.Main</RootNamespace>
+    <AssemblyName>CompetitionManager</AssemblyName>
+    <ApplicationIcon>backgammon_32x32.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;FEDITION</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'FedEdition|AnyCPU' ">
+    <OutputPath>bin\FedEdition\</OutputPath>
+    <DefineConstants>TRACE;FEDITION</DefineConstants>
+    <Optimize>true</Optimize>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Standard|AnyCPU' ">
+    <OutputPath>bin\FedEdition\</OutputPath>
+    <DefineConstants>TRACE;STANDARD</DefineConstants>
+    <Optimize>true</Optimize>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'StandardEdition|AnyCPU' ">
+    <OutputPath>bin\StandardEdition\</OutputPath>
+    <DefineConstants>TRACE;STANDARD</DefineConstants>
+    <Optimize>true</Optimize>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'MiniEdition|AnyCPU' ">
+    <OutputPath>bin\MiniEdition\</OutputPath>
+    <DefineConstants>TRACE;LIMITED</DefineConstants>
+    <Optimize>true</Optimize>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CheckUpdate.cs" />
+    <Compile Include="CryptUtils.cs" />
+    <Compile Include="fAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fAbout.Designer.cs">
+      <DependentUpon>fAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fCompetition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fCompetition.Designer.cs">
+      <DependentUpon>fCompetition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fCompetitionInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fCompetitionInfo.Designer.cs">
+      <DependentUpon>fCompetitionInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fMain.Designer.cs">
+      <DependentUpon>fMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fPlayerInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fPlayerInfo.Designer.cs">
+      <DependentUpon>fPlayerInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fPlayersList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fPlayersList.Designer.cs">
+      <DependentUpon>fPlayersList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="framePlayerRating.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="framePlayerRating.Designer.cs">
+      <DependentUpon>framePlayerRating.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fRegistationInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fRegistationInfo.Designer.cs">
+      <DependentUpon>fRegistationInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fSettings.Designer.cs">
+      <DependentUpon>fSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fStartCompetition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fStartCompetition.Designer.cs">
+      <DependentUpon>fStartCompetition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fTournamentInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fTournamentInfo.Designer.cs">
+      <DependentUpon>fTournamentInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fTypeOfSportEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fTypeOfSportEdit.Designer.cs">
+      <DependentUpon>fTypeOfSportEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GameRatingControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GameRatingControl.Designer.cs">
+      <DependentUpon>GameRatingControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImportPlayers.cs" />
+    <Compile Include="LicenseManager.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="fAbout.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>fAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fCompetition.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>fCompetition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fCompetitionInfo.resx">
+      <DependentUpon>fCompetitionInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fMain.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>fMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fPlayerInfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>fPlayerInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fPlayersList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>fPlayersList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="framePlayerRating.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>framePlayerRating.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fRegistationInfo.resx">
+      <DependentUpon>fRegistationInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fSettings.resx">
+      <DependentUpon>fSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fStartCompetition.resx">
+      <DependentUpon>fStartCompetition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fTournamentInfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>fTournamentInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fTypeOfSportEdit.resx">
+      <DependentUpon>fTypeOfSportEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameRatingControl.resx">
+      <DependentUpon>GameRatingControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <Compile Include="WinInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\WindowSkin\WindowSkin.csproj">
+      <Project>{5E0A0B57-58D2-4ED9-A531-A9E5016EE838}</Project>
+      <Name>WindowSkin</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ErrorViewer\ErrorViewer.csproj">
+      <Project>{5A38B6B9-B2F9-43D5-9A8E-2545732C736F}</Project>
+      <Name>ErrorViewer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PicturePrinter\PicturePrinter.csproj">
+      <Project>{501883F4-0748-40D4-A9E1-1430B43B3805}</Project>
+      <Name>PicturePrinter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TA.CompetitionControllers\TA.Competitions.Controllers.csproj">
+      <Project>{328E055B-B561-4137-A774-2C5124F1B577}</Project>
+      <Name>TA.Competitions.Controllers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TA.Competitions\TA.Competitions.csproj">
+      <Project>{930908DC-CFB5-45C4-BD32-4126BBAC18A0}</Project>
+      <Name>TA.Competitions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TA.Corel.New\TA.Corel.csproj">
+      <Project>{CC5A7AE0-3F1B-49AB-9CEA-12ABFB87F5FF}</Project>
+      <Name>TA.Corel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TA.DB.Manager\TA.DB.Manager.csproj">
+      <Project>{987DA207-A348-409F-8EF7-92F331DFDA40}</Project>
+      <Name>TA.DB.Manager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TA.DB\TA.DB.csproj">
+      <Project>{1F1B9E10-E3C0-4CF2-A4EB-074B399AA9A9}</Project>
+      <Name>TA.DB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TA.ExIm\TA.ExIm.csproj">
+      <Project>{A1950B83-FF80-416F-8DAD-785E37B0C6B1}</Project>
+      <Name>TA.ExIm</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TA.Forms.Competitions\TA.Competitions.Forms.csproj">
+      <Project>{6C1423D1-644F-4E53-B561-C59482CD7AFB}</Project>
+      <Name>TA.Competitions.Forms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TA.Localization\Localizator.csproj">
+      <Project>{B79EA5EB-8592-4AF9-8804-12C71F195CDA}</Project>
+      <Name>Localizator</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TA.RatingSystem.Builder\TA.RatingSystem.Builder.csproj">
+      <Project>{F78DAEF7-E704-4B62-9A79-8A67D7199AAC}</Project>
+      <Name>TA.RatingSystem.Builder</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TA.RatingSystem\TA.RatingSystem.csproj">
+      <Project>{5F2E54AB-BBE2-4E67-8F83-4E7920DD3E4A}</Project>
+      <Name>TA.RatingSystem</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TA.Utils\TA.Utils.csproj">
+      <Project>{0EA05A3A-7C90-4467-9CAD-B8ECBDE331BF}</Project>
+      <Name>TA.Utils</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Updater\Updater.csproj">
+      <Project>{3B685C7D-E7F3-4971-9255-5041D1A9A99B}</Project>
+      <Name>Updater</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_32x32.png" />
+    <None Include="Resources\new_32x32.png" />
+    <None Include="Resources\players_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player_add_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player_edit_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="3d-icon.ico" />
+    <Content Include="backgammon_32x32.ico" />
+    <Content Include="bin\Debug\RatingXSL.xslt" />
+    <Resource Include="Resources\Database.ico" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Resources\db_import_40x40.png" />
+    <None Include="Resources\db_export_40x40.png" />
+    <None Include="Resources\about.png" />
+    <None Include="Resources\logo_black.png" />
+    <None Include="Resources\home_32x32.png" />
+    <None Include="Resources\settings_alt_32x32.png" />
+    <None Include="Resources\settings_32x32.png" />
+    <None Include="Resources\players_list_export_1 _40x401.png" />
+    <None Include="Resources\tournament_delete_40x401.png" />
+    <None Include="Resources\players_list_export_1 _40x40.png" />
+    <None Include="Resources\players_list_add_40x40.png" />
+    <None Include="Resources\players_list_edit_40x40.png" />
+    <None Include="Resources\players_list_delete_40x40.png" />
+    <None Include="Resources\players_list_40x40.png" />
+    <None Include="Resources\exit_40x40.png" />
+    <None Include="Resources\tournament_add_40x40.png" />
+    <None Include="Resources\tournament_edit_40x40.png" />
+    <None Include="Resources\players_exit_40x40.png" />
+    <None Include="Resources\players_list_export _40x40.png" />
+    <None Include="Resources\player_info_delete _40x40.png" />
+    <None Include="Resources\player_info_add _40x40.png" />
+    <None Include="Resources\player_info_edit _40x40.png" />
+    <None Include="Resources\app_act_save_disk_24x24.png" />
+    <None Include="Resources\Crystal_Clear_action_fileprint_24x24.png" />
+    <None Include="Resources\app_act_exit_20x20.png" />
+    <None Include="Resources\Crystal_Clear_action_fileprint_33_33.png" />
+    <None Include="Resources\app_act_save_disk_32x32.png" />
+    <None Include="Resources\app_act_exit_30x30.png" />
+    <None Include="Resources\delete_32x32.png" />
+    <None Include="Resources\new_32x321.png" />
+    <None Include="Resources\Crystal_Clear_app_kbackgammon.png" />
+    <None Include="Resources\action_button_info_32x32.png" />
+    <None Include="Resources\rating_calc_32x32.png" />
+    <None Include="Resources\player_edit_gray_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>Клиентский профиль .NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Установщик Windows 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

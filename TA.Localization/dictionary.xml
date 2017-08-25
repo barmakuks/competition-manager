@@ -1,0 +1,1360 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<DICTIONARY current="EN">
+  <LANGUAGES>
+    <LANGUAGE id="RU" description="Русский"/>
+    <LANGUAGE id="EN" description="English"/>
+  </LANGUAGES>
+  <WORDS>
+    <WORD value="16_FINAL">
+      <EN value="16th-final"/>
+      <RU value="1/16 Финала"/>
+    </WORD>
+    <WORD value="16_FINALS">
+      <EN value="16th-finals"/>
+      <RU value="1/16 Финала"/>
+    </WORD>
+    <WORD value="1ST">
+      <EN value="1st"/>
+      <RU value="1-й"/>
+    </WORD>
+    <WORD value="3_PLACE_MATCH">
+      <EN value="3rd place match"/>
+      <RU value="Матч за 3-е место"/>
+    </WORD>
+    <WORD value="32_FINAL">
+      <EN value="32nd-final"/>
+      <RU value="1/32 Финала"/>
+    </WORD>
+    <WORD value="32_FINALS">
+      <EN value="32nd-finals"/>
+      <RU value="1/32 Финала"/>
+    </WORD>
+    <WORD value="64_FINAL">
+      <EN value="64th-final"/>
+      <RU value="1/64 Финала"/>
+    </WORD>
+    <WORD value="64_FINALS">
+      <EN value="64th-finals"/>
+      <RU value="1/64 Финала"/>
+    </WORD>
+    <WORD value="ABOUT">
+      <EN value="About..."/>
+      <RU value="О Программе..."/>
+    </WORD>
+    <WORD value="ABORT">
+      <EN value="Abort"/>
+      <RU value="Прервать"/>
+    </WORD>
+    <WORD value="ACTIVATE">
+      <EN value="Activate"/>
+      <RU value="Активировать"/>
+    </WORD>
+    <WORD value="ACTIVATION_KEY">
+      <EN value="Activation Code"/>
+      <RU value="Код Активации"/>
+    </WORD>
+    <WORD value="ACTIVATION_KEY_CORRUPTED">
+      <EN value="Activation Code is incorrect. Please contact software developer."/>
+      <RU value="Код Активации поврежден. Обратитесь к разработчику."/>
+    </WORD>
+
+    <WORD value="ADD_PTS">
+      <EN value="Add.Pts"/>
+      <RU value="Доб."/>
+    </WORD>
+    <WORD value="ADD_REMOVE">
+      <EN value="Add or Remove"/>
+      <RU value="Добавить / Снять"/>
+    </WORD>
+    <WORD value="ADD_REMOVE_PTS">
+      <EN value="Add or Remove Points"/>
+      <RU value="Добавить / Снять очки"/>
+    </WORD>
+    <WORD value="ADDIT_INFO">
+      <EN value="Additional Information"/>
+      <RU value="Дополнительная информация"/>
+    </WORD>
+    <WORD value="ADDRESS">
+      <EN value="Address"/>
+      <RU value="Адрес"/>
+    </WORD>
+    <WORD value="ALLOW_REBUY">
+      <EN value="Allow Rebuy and late entry"/>
+      <RU value="Разрешить докупку и позний вход"/>
+    </WORD>
+    <WORD value="APPLY">
+      <EN value="Apply"/>
+      <RU value="Применить"/>
+    </WORD>
+    <WORD value="APPLY_PARAMS">
+      <EN value="Apply Parameters"/>
+      <RU value="Применить"/>
+    </WORD>
+    <WORD value="ASK_CANCEL_ROUND">
+      <EN value="Are you sure you want to cancel the results and the draw of last round?"/>
+      <RU value="Вы действительно хотите отменить результаты матчей и жеребьевку последнего раунда?"/>
+    </WORD>
+    <WORD value="ASK_COMPLETE_ROUND">
+      <EN value="Do you really want to complete the current round and start the next?"/>
+      <RU value="Вы действительно хотите завершить матчи текущего раунда и начать следующий?"/>
+    </WORD>
+    <WORD value="ASK_FINISH_GROUP">
+      <EN value="Do you really want to finish games in the group round and form a grid playoffs?"/>
+      <RU value="Вы действительно хотите завершить групповой руанд и сформировать сетку плей-офф?"/>
+    </WORD>
+    <WORD value="ASK_ONE_MORE_ROUND">
+      <EN value="Needed to determine the winners of rounds have been played. Do you really want to complete the current round and start the next?"/>
+      <RU value="Необходимое количество раундов уже сыграно. Хотите провести еще один раунд?"/>
+    </WORD>
+    <WORD value="ASK_REMOVE_COMPETITION">
+      <EN value="Are you sure you want to remove this competition? All results of the competition will be lost. Remove?"/>
+      <RU value="Вы действительно хотите удалить данное соревнование? Все результаты соревнования будут потеряны. Удалить?"/>
+    </WORD>
+    <WORD value="ASK_REMOVE_PLAYER_INFO">
+      <EN value="Remove selected player's registration info?"/>
+      <RU value="Вы действительно хотите удалить регистрационную информацию о данном игроке?"/>
+    </WORD>
+    <WORD value="ASK_REMOVE_RATING">
+      <EN value="Are you sure you want to remove {0} Rating List?"/>
+      <RU value="Вы действительно хотите  удалить рейтинговый лист {0}?"/>
+    </WORD>
+    <WORD value="ASK_REMOVE_TOURNAMENT">
+      <EN value="Are you sure you want to remove this tournament? All tournament results will be lost. Remove?"/>
+      <RU value="Вы действительно хотите удалить данный турнир? Вся информация о турнире и его соревнованиях будет потеряна. Удалить?"/>
+    </WORD>
+    <WORD value="AUTO_DRAW">
+      <EN value="Random"/>
+      <RU value="Случайно"/>
+    </WORD>
+    <WORD value="AVAIL_PTS">
+      <EN value="Available Points"/>
+      <RU value="Доступные очки"/>
+    </WORD>
+    <WORD value="BETA_LIMIT_COMPETITIONS">
+      <EN value="Exceeded the limit of competitions for beta version."/>
+      <RU value="Достигнут лимит соревнований для beta версии."/>
+    </WORD>
+    <WORD value="BETA_LIMIT_PLAYERS">
+      <EN value="Exceeded the limit of players."/>
+      <RU value="Превышен лимит игроков."/>
+    </WORD>
+    <WORD value="BETA_LIMIT_TOURNAMENTS">
+      <EN value="Exceeded the limit tournaments for beta version."/>
+      <RU value="Достигнут лимит турниров для beta версии."/>
+    </WORD>
+    <WORD value="BETS_SEQUENCE">
+      <EN value="Sequence of bets"/>
+      <RU value="Последовательность ставок"/>
+    </WORD>    
+    <WORD value="BUILD_DATE">
+      <EN value="Build date: {0}"/>
+      <RU value="Дата сборки: {0}"/>
+    </WORD>
+    <WORD value="BUY">
+      <EN value="Bye"/>
+      <RU value="Bye"/>
+    </WORD>
+    <WORD value="CANCEL">
+      <EN value="Cancel"/>
+      <RU value="Отмена"/>
+    </WORD>
+    <WORD value="CANCEL_DRAW">
+      <EN value="Cancel Drawing"/>
+      <RU value="Сбросить"/>
+    </WORD>
+    <WORD value="CANCEL_ROUND">
+      <EN value="Cancel Round"/>
+      <RU value="Отменить раунд"/>
+    </WORD>
+    <WORD value="CANCEL_ROUND_#">
+      <EN value="Cancel Round #"/>
+      <RU value="Отменить раунд №"/>
+    </WORD>
+    <WORD value="CANNOT_CREATE_MATCHES">
+      <EN value="You can't create matches before players drawing complete"/>
+      <RU value="Невозможно содать матчи до полного завершения жеребьевки"/>
+    </WORD>
+    <WORD value="CANNOT_REMOVE_PLAYER_INFO">
+      <EN value="You can not remove the registration information of the player, as he takes part in some competitions."/>
+      <RU value="Удалиение регистрауионной информации об игрок невозможно, т.к. он принимает участие в некоторых тунирах."/>
+    </WORD>
+    <WORD value="CANNOT_REMOVE_RATING">
+      <EN value="You can not remove the current Rating List. You must first remove its competitions."/>
+      <RU value="Удаление рейтингового листа невозможно. Прежде удалите соревнования."/>
+    </WORD>
+    <WORD value="CHANGE">
+      <EN value="Change"/>
+      <RU value="Изменить"/>
+    </WORD>
+    <WORD value="CHANGE_IN_RATING">
+      <EN value="Change in Rating"/>
+      <RU value="Изменение рейтинга"/>
+    </WORD>
+    <WORD value="CHANGE_PARAMS">
+      <EN value="Change Parameters"/>
+      <RU value="Изменить параметры"/>
+    </WORD>
+    <WORD value="CHECK_QUALIFIED_PLAYERS">
+      <EN value="Check players qualified to the next round"/>
+      <RU value=""/>
+    </WORD>
+    <WORD value="CHECK_UPDATE">
+      <EN value="Check for updates"/>
+      <RU value="Проверка обновлений"/>
+    </WORD>
+    <WORD value="CITY">
+      <EN value="City"/>
+      <RU value="Город"/>
+    </WORD>
+    <WORD value="CLOSE">
+      <EN value="Close"/>
+      <RU value="Закрыть"/>
+    </WORD>
+    <WORD value="CLOSE_LIST">
+      <EN value="Close List"/>
+      <RU value="Закрыть"/>
+    </WORD>
+    <WORD value="COMP_MAN">
+      <EN value="Competition Manager"/>
+      <RU value="Competition Manager"/>
+    </WORD>
+    <WORD value="COMPETITION">
+      <EN value="Competition"/>
+      <RU value="Соревнование"/>
+    </WORD>
+    <WORD value="COMPETITION_FORMAT">
+      <EN value="Competition Format"/>
+      <RU value="Формат соревнования"/>
+    </WORD>
+    <WORD value="COMPETITION_INFO">
+      <EN value="Competition Information"/>
+      <RU value="Информация о соревновании"/>
+    </WORD>
+    <WORD value="COMPETITION_MATCHES">
+      <EN value="Competition Matches"/>
+      <RU value="Сыгранные матчи"/>
+    </WORD>
+    <WORD value="COMPETITION_NAME">
+      <EN value="Competition Name"/>
+      <RU value="Наименование"/>
+    </WORD>
+    <WORD value="COMPETITION_NOT_INIT">
+      <EN value="Competition is not initialized"/>
+      <RU value="Соревнование не инициализировано"/>
+    </WORD>
+    <WORD value="COMPETITION_REMOVE">
+      <EN value="Competition Removing"/>
+      <RU value="Удаление соревнования"/>
+    </WORD>
+    <WORD value="COMPETITION_RESULTS">
+      <EN value="Competition Results"/>
+      <RU value="Результаты соревнования"/>
+    </WORD>
+    <WORD value="COMPETITION_TITLE">
+      <EN value="Competition Title"/>
+      <RU value="Заголовок"/>
+    </WORD>
+    <WORD value="COMPLETED">
+      <EN value="Completed"/>
+      <RU value="Завершен"/>
+    </WORD>
+    <WORD value="CONNECTION_STRING_EMPTY">
+      <EN value="Connection string is empty"/>
+      <RU value="Строка соединения с БД пуста"/>
+    </WORD>
+    <WORD value="CONSOLATION">
+      <EN value="Consolation"/>
+      <RU value="Consolation"/>
+    </WORD>
+    <WORD value="CONSOLATION_FINAL">
+      <EN value="Consolation Final"/>
+      <RU value="Финал Consolation"/>
+    </WORD>
+    <WORD value="CONSOLATION_SEMI_A">
+      <EN value="Consolation Semifinal A"/>
+      <RU value="Полуфинал А Consolation"/>
+    </WORD>
+    <WORD value="CONSOLATION_SEMI_B">
+      <EN value="Consolation Semifinal B"/>
+      <RU value="Consolation Б Consolation"/>
+    </WORD>
+    <WORD value="COPY_CLIP">
+      <EN value="Copy to clipboard"/>
+      <RU value="Копировать в буфер обмена"/>
+    </WORD>
+    <WORD value="COUNTRY">
+      <EN value="Country"/>
+      <RU value="Страна"/>
+    </WORD>
+    <WORD value="CREATE_3RD_PLACE">
+      <EN value="Create a match for 3rd place?"/>
+      <RU value="Создать матч за 3-е место?"/>
+    </WORD>
+    <WORD value="CREATE_TOURNAMENT">
+      <EN value="Create New Tournament"/>
+      <RU value="Создать новый турнир"/>
+    </WORD>
+    <WORD value="CREATE">
+      <EN value="Create"/>
+      <RU value="Создать"/>
+    </WORD>
+    <WORD value="CURRENT_STATE">
+      <EN value="Current State"/>
+      <RU value="Текущее состояние"/>
+    </WORD>
+    <WORD value="DATE">
+      <EN value="Date"/>
+      <RU value="Дата"/>
+    </WORD>
+    <WORD value="DATE_START">
+      <EN value="Start"/>
+      <RU value="с"/>
+    </WORD>
+    <WORD value="DATE_FINISH">
+      <EN value="Finish"/>
+      <RU value="по"/>
+    </WORD>
+    <WORD value="DB_OUTDATED">
+      <EN value="DB version is outdated. Upgrade to the latest version?"/>
+      <RU value="Текущая версия БД устарела. Произвести обновление БД?"/>
+    </WORD>
+    <WORD value="DB_WORK">
+      <EN value="Database work"/>
+      <RU value="Работа с БД"/>
+    </WORD>
+    <WORD value="DE_DESCRIPTION">
+      <EN value="System with knock-out after two losses"/>
+      <RU value="Система с вылетом после двух поражений"/>
+    </WORD>
+    <WORD value="DELTA">
+      <EN value="Delta"/>
+      <RU value="Дельта"/>
+    </WORD>
+    <WORD value="DESCRIPTION">
+      <EN value="Description"/>
+      <RU value="Описание"/>
+    </WORD>
+    <WORD value="DONE">
+      <EN value="...done"/>
+      <RU value="...завершено"/>
+    </WORD>
+    <WORD value="DOUBLE_ELIMINATION">
+      <EN value="Double Elimination"/>
+      <RU value="Double Elimination"/>
+    </WORD>
+    <WORD value="DOWNLOAD_NEW">
+      <EN value="Download new version"/>
+      <RU value="Скачать новую версию"/>
+    </WORD>
+    <WORD value="DRAW">
+      <EN value="Draw"/>
+      <RU value="Жеребьевка"/>
+    </WORD>
+    <WORD value="DRAW_ERROR">
+      <EN value="Draw Error"/>
+      <RU value="Ошибка жеребьевки"/>
+    </WORD>
+    <WORD value="DRAW_NO">
+      <EN value="Draw No"/>
+      <RU value="Жребий"/>
+    </WORD>
+    <WORD value="DRAW_NOT_COMPLETE">
+      <EN value="Drawing is not complete"/>
+      <RU value="Жеребьевка не окончена"/>
+    </WORD>
+    <WORD value="DRAW_PLAYERS">
+      <EN value="Draw Players"/>
+      <RU value="Жеребьевка"/>
+    </WORD>
+    <WORD value="DRAW_PLAYOFF">
+      <EN value="The draw players for the playoffs"/>
+      <RU value="Жеребьевка плей-офф"/>
+    </WORD>
+    <WORD value="DRAW_RESULTS">
+      <EN value="Draw results"/>
+      <RU value="Результат жеребьевки"/>
+    </WORD>
+    <WORD value="DRAW_TYPE">
+      <EN value="Вид турнирной сетки"/>
+      <RU value="Вид турнирной сетки"/>
+    </WORD>
+    <WORD value="EARNED">
+      <EN value="earned"/>
+      <RU value="набрано"/>
+    </WORD>
+    <WORD value="EDIT_PARAMS">
+      <EN value="Edit Parameters"/>
+      <RU value="Изменить параметры"/>
+    </WORD>
+    <WORD value="EDIT_REG_INFO">
+      <EN value="Edit Registration Info"/>
+      <RU value="Изменить регистрацию"/>
+    </WORD>
+    <WORD value="EIGHT_FINAL">
+      <EN value="Eighth-final"/>
+      <RU value="1/8 финала"/>
+    </WORD>
+    <WORD value="EIGHT_FINALS">
+      <EN value="Eighth-finals"/>
+      <RU value="1/8 финала"/>
+    </WORD>
+    <WORD value="EMAIL">
+      <EN value="E-Mail"/>
+      <RU value="e-mail"/>
+    </WORD>
+    <WORD value="ENTER_EMAIL">
+      <EN value="Please enter Your E-Mail"/>
+      <RU value="Введите Ваш e-mail"/>
+    </WORD>
+    <WORD value="ENTER_NAME">
+      <EN value="Please enter Your Name"/>
+      <RU value="Введите Ваше имя"/>
+    </WORD>
+    <WORD value="ENTER_REG_CODE">
+      <EN value="Please enter Registration Code"/>
+      <RU value="Введите Регистрационный Код"/>
+    </WORD>
+    <WORD value="ENTER_ACTIVATION_CODE">
+      <EN value="Enter Activation Code and press Activate"/>
+      <RU value="Введите Код Активации и нажмите Активировать"/>
+    </WORD>
+    <WORD value="ENTER_VALID_REG_KEY">
+      <EN value="Enter valid Registration Key"/>
+      <RU value="Введите правильный Регистрационный Код"/>
+    </WORD>
+    <WORD value="ERROR">
+      <EN value="Error"/>
+      <RU value="Ошибка"/>
+    </WORD>
+    <WORD value="ERROR_VIEW">
+      <EN value="Error View"/>
+      <RU value="Ошибка"/>
+    </WORD>
+    <WORD value="EXCEPTION_CATCHED">
+      <EN value="A following exception was catched:"/>
+      <RU value="Была получена следующая ошибка"/>
+    </WORD>
+    <WORD value="EXIT">
+      <EN value="Exit Program"/>
+      <RU value="Выход из программы"/>
+    </WORD>
+    <WORD value="EXPORT">
+      <EN value="Export"/>
+      <RU value="Экспортировать"/>
+    </WORD>
+    <WORD value="EXPORT_IMPORT">
+      <EN value="Data exchange"/>
+      <RU value="Обмен данными"/>
+    </WORD>
+
+    <WORD value="EXPORT_LIST">
+      <EN value="Export List"/>
+      <RU value="Экспортировать список"/>
+    </WORD>
+    <WORD value="FAILED">
+      <EN value="Failed"/>
+      <RU value="Ошибка"/>
+    </WORD>
+    <WORD value="FILL_NAME_EMAIL">
+      <EN value="You must fill in the fields Username and E-Mail"/>
+      <RU value="Заполните поля Имя Пользователя и e-mail"/>
+    </WORD>
+    <WORD value="FINAL">
+      <EN value="Final"/>
+      <RU value="Финал"/>
+    </WORD>
+    <WORD value="FINAL_MATCH">
+      <EN value="Final match"/>
+      <RU value="Финальный матч"/>
+    </WORD>
+    <WORD value="FINAL_RATING">
+      <EN value="Final Rating"/>
+      <RU value="Конечный рейтинг"/>
+    </WORD>
+    <WORD value="FINAL_RESULTS">
+      <EN value="Final Results"/>
+      <RU value="Конечные результаты"/>
+    </WORD>
+    <WORD value="FINISH">
+      <EN value="Finish"/>
+      <RU value="Завершить"/>
+    </WORD>
+    <WORD value="FINISH_COMPETITION">
+      <EN value="Finish Competition"/>
+      <RU value="Завершить соревнование"/>
+    </WORD>
+    <WORD value="FINISH_DATE">
+      <EN value="Finish Date"/>
+      <RU value=" Дата окончания"/>
+    </WORD>
+    <WORD value="FINISH_DRAW">
+      <EN value="Finish the registration and create matches of the first round?"/>
+      <RU value="Провести жеребьевку участников и сформировать сетку первого раунда?"/>
+    </WORD>
+    <WORD value="FINISH_GROUP_ROUND">
+      <EN value="Finish Group Round"/>
+      <RU value="Завершить раунд"/>
+    </WORD>
+    <WORD value="FINISH_GROUP_ROUND_MATCHES">
+      <EN value="Finish Games in Group Round"/>
+      <RU value="Завершить матчи групового раунда"/>
+    </WORD>
+    <WORD value="FIRST_PLAYOFFS">
+      <EN value="First leg playoffs"/>
+      <RU value="Первый раунд плей-офф"/>
+    </WORD>
+    <WORD value="FPP">
+      <EN value="FPP® in Swiss"/>
+      <RU value="ФИП®-турнир"/>
+    </WORD>
+    <WORD value="FPP_DESCRIPTION">
+      <EN value="FPP®-tournament based on Swiss System"/>
+      <RU value="ФИП®-турнир по швейцарской системе"/>
+    </WORD>
+    <WORD value="GAME">
+      <EN value="Game"/>
+      <RU value="Игра"/>
+    </WORD>
+    <WORD value="GENERATE_REG_CODE">
+      <EN value="Generate Registration Code"/>
+      <RU value="Генерировать Код Регистрации"/>
+    </WORD>
+    <WORD value="GROUP_#">
+      <EN value="Group {0}"/>
+      <RU value="Группа {0}"/>
+    </WORD>
+    <WORD value="HAND_DRAW">
+      <EN value="Manual"/>
+      <RU value="Вручную"/>
+    </WORD>
+    <WORD value="HTML_FILTER">
+      <EN value="HTML files|*.html;*.htm"/>
+      <RU value="Файлы HTML|*.html;*.htm"/>
+    </WORD>
+    <WORD value="IDENTIFIER">
+      <EN value="Identifier"/>
+      <RU value="Идентификатор"/>
+    </WORD>
+    <WORD value="IGNORE">
+      <EN value="Ignore"/>
+      <RU value="Игнорировать"/>
+    </WORD>
+    <WORD value="IMPORT">
+      <EN value="Import"/>
+      <RU value="Импортировать"/>
+    </WORD>
+    <WORD value="IMPORT_BEGIN">
+      <EN value="Import"/>
+      <RU value="Импортировать"/>
+    </WORD>
+    <WORD value="IMPORT_COMPLETE">
+      <EN value="Import compite"/>
+      <RU value="Импортирование завершено"/>
+    </WORD>
+    <WORD value="IMPORT_ONLY_NEW">
+      <EN value="Import Only Unregistered Players"/>
+      <RU value="Импортировать данные только незарегистрированных игроков"/>
+    </WORD>
+    <WORD value="IMPORT_PLAYERS">
+      <EN value="Import List of Players"/>
+      <RU value="Импортирование списока игроков"/>
+    </WORD>
+    <WORD value="IMPORT_RATINGS">
+      <EN value="Import Ratings"/>
+      <RU value="Импортирование рейтингов"/>
+    </WORD>
+    <WORD value="IMPORT_TOURNAMENTS">
+      <EN value="Import Tournaments"/>
+      <RU value="Импортирование турниров"/>
+    </WORD>
+    <WORD value="IMPORT_UPDATE_INFO">
+      <EN value="Update Registered Players Info"/>
+      <RU value="Перезаписывать данные зарегистрированных игроков"/>
+    </WORD>
+    <WORD value="IMPOSSIBLE_TO_DRAW">
+      <EN value="Impossible to draw"/>
+      <RU value="Невозможно создать матчи для следующего раунда"/>
+    </WORD>
+
+    <WORD value="IN_CONSOLATION">
+      <EN value="in Consolation tournament"/>
+      <RU value="в утешительном турнире"/>
+    </WORD>
+    <WORD value="IN_MAIN">
+      <EN value="in Main tournament"/>
+      <RU value="в главном турнире"/>
+    </WORD>
+    <WORD value="IN_PROGRESS">
+      <EN value="In progress..."/>
+      <RU value="в процессе..."/>
+    </WORD>
+    <WORD value="IN_TOURNAMENT">
+      <EN value="In tournament"/>
+      <RU value="В турнире"/>
+    </WORD>
+    <WORD value="IS_NOT_PLAYERS_FILE">
+      <EN value="This file is not contains players list or file format is not correct"/>
+      <RU value="В этом файле не найден список игроков или неправильный формат файла"/>
+    </WORD>
+    <WORD value="IS_NOT_CMDX_FILE">
+      <EN value="This file has incorrect format"/>
+      <RU value="Неправильный формат файла"/>
+    </WORD>
+
+    <WORD value="KB">
+      <EN value="KB"/>
+      <RU value="КБ"/>
+    </WORD>
+    <WORD value="KO">
+      <EN value="Knockout"/>
+      <RU value="Олимпийка"/>
+    </WORD>
+    <WORD value="KO_CONSLATION_DESCRIPTION">
+      <EN value="Main tournament based on Knock-out system, A consolation tournament for losers in the first several rounds of the main tournament. Progressive means that losers in later rounds of the main event get one or more byes to later rounds of the consolation event. "/>
+      <RU value="Главный турнир проводится по системе плей-офф. Проигравшие в главном турнире попадают в утешительный турнир"/>
+    </WORD>
+    <WORD value="KO_CONSOLATION">
+      <EN value="Knockout + Progressive Consolation"/>
+      <RU value="Олимпийка + Progressive Consolation"/>
+    </WORD>
+    <WORD value="KO_DESCRIPTION">
+      <EN value="System with knock-out after first defeat"/>
+      <RU value="Система с вылетом после первого поражения"/>
+    </WORD>    
+    <WORD value="INTERFACE_LANG">
+      <EN value="Interface language"/>
+      <RU value="Язык интерфейса"/>
+    </WORD>
+    <WORD value="LATE_ENTRY_PTS">
+      <EN value="Late entry start points"/>
+      <RU value="Стартовые очки для позднего входа"/>
+    </WORD>
+    <WORD value="LIC_EXPIRED">
+      <EN value="License date expired"/>
+      <RU value="Срок действия лицензии истек"/>
+    </WORD>
+    <WORD value="LICENSE_DATE">
+      <EN value="License expire date "/>
+      <RU value="Срок действия лицензии "/>
+    </WORD>
+    <WORD value="LICENSE_EXPIRE_RENEW">
+      <EN value="The license has expired. Want to renew your license now?"/>
+      <RU value="Срок действия лицензии истек. Хотите обновить лицензию?"/>
+    </WORD>
+    <WORD value="LICENSE_EXPIRED">
+      <EN value="The license has expired. Programm will be terminated."/>
+      <RU value="Срок действия лицензии истек. Выполнение программы будет прекращено."/>
+    </WORD>
+    <WORD value="LICENSE_RENEW">
+      <EN value="The license expires on {0}. Want to renew your license now?"/>
+      <RU value="Срок действия лицензии истекает {0}. Хотите обновить лицензию сейчас?"/>
+    </WORD>
+    <WORD value="LICENSE_RENEW_DESCRIPTION">
+      <EN value="For renewal of license you need to enter a new Activation Code. If you do not have the necessary Activation Code or a term of the previous license expired fill in the form below and click Generate Registration Code."/>
+      <RU value="Для продления срока действия лицензии Вам необходимо ввести Код Активации. \nЕсли у Вас его нет или истек срок действия предыдущей лицензии заполните форму представленную ниже и нажмите кнопку Генерировать Код Регистрации."/>
+    </WORD>
+    <WORD value="LICENSE_VALIDITY">
+      <EN value="Validity of the license extended until {0}"/>
+      <RU value="Лицензия действительна до {0}"/>
+    </WORD>
+    <WORD value="LIST_COMPETITION_PLAYERS">
+      <EN value="List of Competition Players "/>
+      <RU value="Список участников"/>
+    </WORD>
+    <WORD value="LOOSER">
+      <EN value="Looser "/>
+      <RU value="Проигравший"/>
+    </WORD>
+    <WORD value="M">
+      <EN value="M"/>
+      <RU value="М"/>
+    </WORD>
+    <WORD value="MANUAL_DRAW">
+      <EN value="Manual Draw"/>
+      <RU value="Ручная жеребьевка"/>
+    </WORD>
+    <WORD value="MATCH_DRAW">
+      <EN value="The match ended in a draw"/>
+      <RU value="Матч завершился вничью"/>
+    </WORD>
+    <WORD value="MATCH_NOT_FINISHED">
+      <EN value="The match is not finished"/>
+      <RU value="Матч не окончен"/>
+    </WORD>
+    <WORD value="MATCH_RESULT">
+      <EN value="Match Result"/>
+      <RU value="Результат матча"/>
+    </WORD>
+    <WORD value="MATCH_FINISHED_RESULT">
+      <EN value="The match ended with a result"/>
+      <RU value="Матч завершился с результатом"/>
+    </WORD>
+    <WORD value="MATCH_RESULT_IS">
+      <EN value="Match result is"/>
+      <RU value="Результат матча"/>
+    </WORD>
+    <WORD value="MATCHES">
+      <EN value="Matches"/>
+      <RU value="Матчи"/>
+    </WORD>
+    <WORD value="MATCHES_AND_RESULTS">
+      <EN value="Matches and Current Results"/>
+      <RU value="Матчи и текущие результаты"/>
+    </WORD>
+    <WORD value="MATCHES_EXISTS">
+      <EN value="Competition matches already created"/>
+      <RU value="Матчи уже созданы"/>
+    </WORD>
+    <WORD value="MATCH_FOR_PTS">
+      <EN value="Match for {0} point(s)"/>
+      <RU value="Матч за {0} очко(в)"/>
+    </WORD>
+    
+    <WORD value="MATCHES_IN_GROUP">
+      <EN value="Matches in the group"/>
+      <RU value="Матчи в группе"/>
+    </WORD>
+    <WORD value="MATCHES_NOT_EXISTS">
+      <EN value="Matches are not created"/>
+      <RU value="матчи не созданы"/>
+    </WORD>
+    <WORD value="MESSAGE">
+      <EN value="Message"/>
+      <RU value="Сообщение"/>
+    </WORD>
+    <WORD value="METHOD_DRAW">
+      <EN value="Methods of Drawing"/>
+      <RU value="Способы жеребьевки"/>
+    </WORD>
+    <WORD value="MORE">
+      <EN value="More"/>
+      <RU value="Еще"/>
+    </WORD>
+    <WORD value="NAME">
+      <EN value="Name"/>
+      <RU value="Имя"/>
+    </WORD>
+    <WORD value="NEW_PLAYER">
+      <EN value="New player"/>
+      <RU value="Новый игрок"/>
+    </WORD>
+    <WORD value="NEW_PLAYER_INFO">
+      <EN value="New Player Registration"/>
+      <RU value="Новая регистрация"/>
+    </WORD>
+    <WORD value="NEW_RATING">
+      <EN value="New Rating List"/>
+      <RU value="Новый рейтинговый лист"/>
+    </WORD>
+    <WORD value="NEW_VERSION_AVAILABLE">
+      <EN value="There is a newer version of software on the site."/>
+      <RU value="На сайте программы появилась новая версия."/>
+    </WORD>
+    <WORD value="NEXT">
+      <EN value="Next"/>
+      <RU value="Далее"/>
+    </WORD>
+    <WORD value="NEXT_ROUND">
+      <EN value="Next Round"/>
+      <RU value="Следующий раунд"/>
+    </WORD>
+    <WORD value="NICK">
+      <EN value="Nick"/>
+      <RU value="Ник"/>
+    </WORD>
+    <WORD value="NICKNAME">
+      <EN value="NickName"/>
+      <RU value="Ник"/>
+    </WORD>
+    <WORD value="NO">
+      <EN value="No"/>
+      <RU value="Нет"/>
+    </WORD>
+    <WORD value="NO_OPPONENT">
+      <EN value="No opponent"/>
+      <RU value="нет соперника"/>
+    </WORD>
+    <WORD value="NO_PLAYER_SELECT">
+      <EN value="No players selected"/>
+      <RU value="Игроки не выбраны"/>
+    </WORD>
+    <WORD value="NOT_FOUND">
+      <EN value="Not found"/>
+      <RU value="Не найдено"/>
+    </WORD>
+    
+    <WORD value="NUMBER_OF_GROUP">
+      <EN value="Number of Groups"/>
+      <RU value="Количество групп"/>
+    </WORD>
+    <WORD value="NUMBER_OF_OPPONENT">
+      <EN value="Number of Opponents"/>
+      <RU value="Количество соперников"/>
+    </WORD>
+    <WORD value="NUMBER_OF_PRIZE">
+      <EN value="Number of prizes"/>
+      <RU value="Призовых мест"/>
+    </WORD>
+    <WORD value="OK">
+      <EN value="Ok"/>
+      <RU value="Ok"/>
+    </WORD>
+    <WORD value="OPEN">
+      <EN value="Open"/>
+      <RU value="Открыть"/>
+    </WORD>
+    <WORD value="OPEN_TOURNAMENT">
+      <EN value="Open Tournament"/>
+      <RU value="Открыть турнир"/>
+    </WORD>
+    <WORD value="OPERATION_IS_NOT_AVAILABLE">
+      <EN value="Operation is not available in this software edition."/>
+      <RU value="Операция не доступна в данной редакции программы."/>
+    </WORD>
+    
+    <WORD value="ORGANIZATION">
+      <EN value="Organization"/>
+      <RU value="Организация"/>
+    </WORD>
+    <WORD value="PARAMS_ERROR">
+      <EN value="Paramaters Check Error"/>
+      <RU value="Ошибка проверки параметров"/>
+    </WORD>
+    <WORD value="PATRONYMIC">
+      <EN value="Patronymic"/>
+      <RU value="Отчество"/>
+    </WORD>
+    <WORD value="PENALTY">
+      <EN value="Penalty"/>
+      <RU value="Штраф"/>
+    </WORD>
+    <WORD value="PENALTY_MISSING">
+      <EN value="Penalty for missing"/>
+      <RU value="Штраф за пропуск"/>
+    </WORD>
+    <WORD value="PERCENT">
+      <EN value="percent"/>
+      <RU value="%"/>
+    </WORD>
+    <WORD value="PERS">
+      <EN value="({0} pers.)"/>
+      <RU value="({0} чел.)"/>
+    </WORD>
+    <WORD value="PERSONAL_INFO">
+      <EN value="Personal Information"/>
+      <RU value="персональная информация"/>
+    </WORD>
+    <WORD value="PHONE">
+      <EN value="Phone"/>
+      <RU value="Телефон"/>
+    </WORD>
+    <WORD value="PHONES">
+      <EN value="Phones"/>
+      <RU value="Телефоны"/>
+    </WORD>
+    <WORD value="PICTURES_FILTER">
+      <EN value="JPEG format|*.jpg|Bitmap format|*.bmp|PNG format|*.png|GIF format|*.gif"/>
+      <RU value="JPEG файлы|*.jpg|Bitmap файлы|*.bmp|PNG файлы|*.png|GIF файлы|*.gif"/>
+    </WORD>
+    <WORD value="PLACE">
+      <EN value="Place"/>
+      <RU value="Место проведения"/>
+    </WORD>
+    <WORD value="PLACE_IN_COMPETITION">
+      <EN value="Place"/>
+      <RU value="Место"/>
+    </WORD>
+    <WORD value="PLC">
+      <EN value="Pl"/>
+      <RU value="М"/>
+    </WORD>
+    <WORD value="PLAYER">
+      <EN value="Player"/>
+      <RU value="Игрок"/>
+    </WORD>
+    <WORD value="PLAYER_IN_COMPETITION">
+      <EN value="Players who takes part in competitions"/>
+      <RU value="Участники соревнований"/>
+    </WORD>
+    <WORD value="PLAYER_INFO">
+      <EN value="Player Registration Information"/>
+      <RU value="Регистрационная информация игрока"/>
+    </WORD>
+    <WORD value="PLAYER_LIST">
+      <EN value="Players List"/>
+      <RU value="Список участников"/>
+    </WORD>
+    <WORD value="PLAYER_NAME">
+      <EN value="Player Name"/>
+      <RU value="Имя игрока"/>
+    </WORD>
+    <WORD value="PLAYER_NEXT_ROUND">
+      <EN value="Players qualified to the next round"/>
+      <RU value="Игроки, прошедшие в следующий раунд"/>
+    </WORD>
+    <WORD value="PLAYER_RATING">
+      <EN value="Player Rating"/>
+      <RU value="Рейтинг игрока"/>
+    </WORD>
+    <WORD value="PLAYER_SELECT">
+      <EN value="Players selection"/>
+      <RU value="Выбор игроков"/>
+    </WORD>
+    <WORD value="PLAYER_SPACE">
+      <EN value="Player "/>
+      <RU value="Игрок "/>
+    </WORD>
+    <WORD value="PLAYERS">
+      <EN value="Players"/>
+      <RU value="Игроки"/>
+    </WORD>
+    <WORD value="PLAYERS_LIMIT_OVER">
+      <EN value="Players limit is over"/>
+      <RU value="Превышен лимит игроков"/>
+    </WORD>
+    <WORD value="PLAYERS_SPACE">
+      <EN value="Players "/>
+      <RU value="Игроки "/>
+    </WORD>
+    <WORD value="PLAYOFF_NOT_FORMED">
+      <EN value="Grid playoffs is not formed"/>
+      <RU value="Сетка плей-офф не сформирована"/>
+    </WORD>
+    <WORD value="PLAYOFF_PLAYER_NUMBER">
+      <EN value="Total number of players entering the grid playoffs"/>
+      <RU value="Общее количество игроков, проходящих в плей-офф"/>
+    </WORD>
+    <WORD value="PLEASE_WAIT">
+      <EN value="An operation will take some time, please wait ..."/>
+      <RU value="Операция займет некоторое время, подождите..."/>
+    </WORD>
+    <WORD value="POINTS">
+      <EN value="Points"/>
+      <RU value="Очки"/>
+    </WORD>
+    <WORD value="POINTS1">
+      <EN value="points"/>
+      <RU value="очков"/>
+    </WORD>
+
+    <WORD value="POINTS_EARNED">
+      <EN value="Points earned"/>
+      <RU value="Набранные очки"/>
+    </WORD>
+    <WORD value="PRINT">
+      <EN value="Print"/>
+      <RU value="Печать"/>
+    </WORD>
+    <WORD value="PTS">
+      <EN value="Pts"/>
+      <RU value="О"/>
+    </WORD>
+    <WORD value="QUARTER_FINAL">
+      <EN value="Quarter-final"/>
+      <RU value="Четвертьфинал"/>
+    </WORD>
+    <WORD value="QUARTER_FINALS">
+      <EN value="Quarter-finals"/>
+      <RU value="Четвертьфиналы"/>
+    </WORD>
+    <WORD value="BET_RATE">
+      <EN value="Rate coefficient"/>
+      <RU value="Размер ставки"/>
+    </WORD>
+    <WORD value="RATING">
+      <EN value="Rating"/>
+      <RU value="Рейтинг"/>
+    </WORD>
+    <WORD value="RATING_AT">
+      <EN value="Rating at {0}"/>
+      <RU value="Рейтинг на {0}"/>
+    </WORD>
+    <WORD value="RATING_CHANGES">
+      <EN value="Rating Changes"/>
+      <RU value="Изменение рейтинга"/>
+    </WORD>
+    <WORD value="RATING_COMPETITION">
+      <EN value="Rating Competition"/>
+      <RU value="Рейтинговое соревнование"/>
+    </WORD>
+    <WORD value="RATING_DRAW">
+      <EN value="Rating"/>
+      <RU value="по рейтингу"/>
+    </WORD>
+    <WORD value="RATING_EXISTS">
+      <EN value="Rating list with this id is already registered in the system"/>
+      <RU value="Рейтинговый лист с таким номером уже зарегистрирован в системе"/>
+    </WORD>
+    <WORD value="RATING_LIST">
+      <EN value="Rating List"/>
+      <RU value="Рейтинговый лист"/>
+    </WORD>
+    <WORD value="RATING_LISTS">
+      <EN value="Ratings"/>
+      <RU value="Рейтинги"/>
+    </WORD>
+    <WORD value="RATING_LIST_ID">
+      <EN value="Identifier of Rating List"/>
+      <RU value="Номер рейтингового"/>
+    </WORD>
+    <WORD value="REBUY_PTS">
+      <EN value="rebuy"/>
+      <RU value="дополн."/>
+    </WORD>
+    <WORD value="REBUY">
+      <EN value="Rebuy"/>
+      <RU value="Rebuy"/>
+    </WORD>
+    <WORD value="REBUY_POINTS">
+      <EN value="Rebuy points"/>
+      <RU value="Rebuy очки"/>
+    </WORD>
+    <WORD value="RECOMMENDED_ROUNDS">
+      <EN value="Recommended number of rounds :"/>
+      <RU value="Рекомендованное количество раундов :"/>
+    </WORD>
+    <WORD value="RECOMMENDED_ROUNDS_INT">
+      <EN value="Recommended number of rounds : {0}"/>
+      <RU value="Рекомендованное количество раундов : {0}"/>
+    </WORD>
+    <WORD value="REG_INFO">
+      <EN value="Registration Info : "/>
+      <RU value="Регистрационная информация : "/>
+    </WORD>
+    <WORD value="REG_KEY">
+      <EN value="Registration Code"/>
+      <RU value="Код Регистрации"/>
+    </WORD>
+    
+    <WORD value="REG_REMOVE_ERROR">
+      <EN value="Registration Remove Error"/>
+      <RU value="Ошибка удаления регистрации"/>
+    </WORD>
+    <WORD value="REGISTER">
+      <EN value="Register"/>
+      <RU value="Регистрировать"/>
+    </WORD>
+    <WORD value="REGISTRATION_AND_DRAW">
+      <EN value="Registration and Draw"/>
+      <RU value="Регистрация и жеребьевка"/>
+    </WORD>
+    <WORD value="REMOVE">
+      <EN value="Remove"/>
+      <RU value="Удалить"/>
+    </WORD>
+    <WORD value="REMOVE_PLAYER_INFO">
+      <EN value="Registration Remove"/>
+      <RU value="Удалить регистрацию"/>
+    </WORD>
+    <WORD value="REMOVE_RATING">
+      <EN value="Remove Rating List"/>
+      <RU value="Удалить рейтинговый лист"/>
+    </WORD>
+    <WORD value="REMOVE_TOURNAMENT">
+      <EN value="Remove Tournament"/>
+      <RU value="Удалить турнир"/>
+    </WORD>
+    <WORD value="RESULT">
+      <EN value="Result"/>
+      <RU value="Результат"/>
+    </WORD>
+    <WORD value="RESULTS">
+      <EN value="Results"/>
+      <RU value="результаты"/>
+    </WORD>
+    <WORD value="RETRY">
+      <EN value="Retry"/>
+      <RU value="Повторить"/>
+    </WORD>
+    <WORD value="ROBIN">
+      <EN value="Round-Robin"/>
+      <RU value="Круговой турнир"/>
+    </WORD>
+    <WORD value="ROBIN_DESCRIPTION">
+      <EN value="Tournament in which each contestant meets all other contestants in turn"/>
+      <RU value="Турнир, в котором каждый игрок встречается с каждым"/>
+    </WORD>
+    <WORD value="ROBIN_KO">
+      <EN value="Round-Robin + Knockout"/>
+      <RU value="Круговой турнир с выходом в плей-офф"/>
+    </WORD>
+    <WORD value="ROBIN_KO_DESCRIPTION">
+      <EN value="Winners of Round-Robin stage go into the next Knockout round"/>
+      <RU value="Игроки, занявшие в групповом раунде первые места в своих группах выходят в плей-офф"/>
+    </WORD>
+    <WORD value="ROUND_INT">
+      <EN value="Round #{0}"/>
+      <RU value="Раунд №{0}"/>
+    </WORD>
+    <WORD value="SAVE">
+      <EN value="Save"/>
+      <RU value="Сохранить"/>
+    </WORD>
+    <WORD value="SAVE_HTML">
+      <EN value="Save Compertition Report in HTML"/>
+      <RU value="Сохранить результаты в HTML"/>
+    </WORD>
+    <WORD value="SAVE_MATCHES">
+      <EN value="Save Matches"/>
+      <RU value="Сохранить матчи"/>
+    </WORD>
+    <WORD value="SAVE_PICT">
+      <EN value="Save Picture"/>
+      <RU value="Сохранить картинку"/>
+    </WORD>
+    <WORD value="SAVE_RESULTS">
+      <EN value="Save results"/>
+      <RU value="Сохранить результаты"/>
+    </WORD>
+    <WORD value="SAVE_TO_FILE">
+      <EN value="Save to file"/>
+      <RU value="Сохранить в файл"/>
+    </WORD>
+    <WORD value="SCALE">
+      <EN value="Scale View"/>
+      <RU value="Масштаб"/>
+    </WORD>
+    <WORD value="SCORE">
+      <EN value="Score"/>
+      <RU value="Счет"/>
+    </WORD>
+    <WORD value="SELECT_DATA_EXPORT">
+      <EN value="Select data to export"/>
+      <RU value="Укажите данные для экспортирования"/>
+    </WORD>
+    <WORD value="SELECT_DATA_IMPORT">
+      <EN value="Select data to import"/>
+      <RU value="Укажите данные для импортирования"/>
+    </WORD>
+
+    <WORD value="SELECTED_INT_PLAYERS">
+      <EN value="Selected {0} players"/>
+      <RU value="Выбрано {0} игроков"/>
+    </WORD>
+    <WORD value="SELECTED_INT1_PLAYERS">
+      <EN value="Selected {0} player"/>
+      <RU value="Выбран {0} игрок"/>
+    </WORD>
+    <WORD value="SELECTED_INT2_PLAYERS">
+      <EN value="Selected {0} players"/>
+      <RU value="Выбрано {0} игрока"/>
+    </WORD>
+    <WORD value="SELECTED_PLAYER">
+      <EN value="Selected Player:"/>
+      <RU value="Выделенный игрок"/>
+    </WORD>
+    <WORD value="SEMIFINAL">
+      <EN value="Semifinal"/>
+      <RU value="Полуфинал"/>
+    </WORD>
+    <WORD value="SEMIFINALS">
+      <EN value="Semifinals"/>
+      <RU value="Полуфиналы"/>
+    </WORD>
+    <WORD value="SEND">
+      <EN value="Send"/>
+      <RU value="Отослать"/>
+    </WORD>
+    <WORD value="SEND_REG_CODE">
+      <EN value="Please send an Registration Code to the address vitalii.misiura@gmail.com, and after some time we will send a new Activation Code to your e-mail."/>
+      <RU value="Отправте Код Регистрации на адрес vitalii.misiura@gmail.com, и через некоторое время мы вышлем на указанный Вами e-mail новый Код Активации."/>
+    </WORD>
+    <WORD value="SEND_EMAIL">
+      <EN value="Send e-mail"/>
+      <RU value="Отослать e-mail"/>
+    </WORD>
+    <WORD value="SENDER">
+      <EN value="sender"/>
+      <RU value="sender"/>
+    </WORD>
+    <WORD value="SETTINGS">
+      <EN value="Settings"/>
+      <RU value="Настройки"/>
+    </WORD>
+    <WORD value="SET_MANUALLY">
+      <EN value="Set manually"/>
+      <RU value="Установить вручную"/>
+    </WORD>
+    <WORD value="SET_AUTO">
+      <EN value="All players gets"/>
+      <RU value="Всем игрокам по"/>
+    </WORD>
+
+    <WORD value="SKIP">
+      <EN value="Skip"/>
+      <RU value="Пропустить"/>
+    </WORD>
+    <WORD value="SOFT_REG">
+      <EN value="Software registration"/>
+      <RU value="Регистрация программы"/>
+    </WORD>
+    <WORD value="SOURCE_PLAYERS">
+      <EN value="Source Players List:"/>
+      <RU value="Исходный список игроков"/>
+    </WORD>
+    <WORD value="SQL_EXEC">
+      <EN value="SQL Exec"/>
+      <RU value=""/>
+    </WORD>
+    <WORD value="START">
+      <EN value="Start"/>
+      <RU value="Старт"/>
+    </WORD>
+    <WORD value="START_COMPETITION">
+      <EN value="Start Competition"/>
+      <RU value="Начать соревнование"/>
+    </WORD>
+    <WORD value="START_DATE">
+      <EN value="Start Date"/>
+      <RU value="Начало"/>
+    </WORD>
+    <WORD value="START_POINTS">
+      <EN value="Start points"/>
+      <RU value="Стартовые очки"/>
+    </WORD>
+    <WORD value="START_RATING">
+      <EN value="Start Rating"/>
+      <RU value="Стартовый рейтинг"/>
+    </WORD>
+    <WORD value="STATUS">
+      <EN value="Status"/>
+      <RU value="Статус"/>
+    </WORD>
+    <WORD value="SUM_POINTS">
+      <EN value="Sum of Points"/>
+      <RU value="Сумма очков"/>
+    </WORD>
+    <WORD value="SURNAME">
+      <EN value="Surname"/>
+      <RU value="Фамилия"/>
+    </WORD>
+    <WORD value="SWING">
+      <EN value="Swing"/>
+      <RU value="Система SWING"/>
+    </WORD>
+    <WORD value="SWING_DESCRIPTION">
+      <EN value="Swing System Tournament"/>
+      <RU value="Система SWING"/>
+    </WORD>
+    <WORD value="SWISS">
+      <EN value="Swiss"/>
+      <RU value="Швейцарская система"/>
+    </WORD>
+    <WORD value="SWISS_DESCRIPTION">
+      <EN value="Swiss System Tournament"/>
+      <RU value="Швейцарская система"/>
+    </WORD>
+    <WORD value="TITLE">
+      <EN value="Title"/>
+      <RU value="Заголовок"/>
+    </WORD>
+    <WORD value="TOO_FEW_PLAYERS">
+      <EN value="Too few players to draw playoffs."/>
+      <RU value="Недостаточно игроков для жеребьевки плей-офф"/>
+    </WORD>
+    <WORD value="TOTAL">
+      <EN value="Total"/>
+      <RU value="Всего"/>
+    </WORD>
+    <WORD value="TOURNAMENT">
+      <EN value="Tournament"/>
+      <RU value="Турнир"/>
+    </WORD>
+    <WORD value="TOURNAMENTS">
+      <EN value="Tournaments"/>
+      <RU value="Турниры"/>
+    </WORD>
+    <WORD value="TOURNAMENT_COMPETITIONS">
+      <EN value="Tournament Competitions"/>
+      <RU value="Соревнования в рамках турнира"/>
+    </WORD>
+    <WORD value="TOURNAMENT_DATE">
+      <EN value="Tournament Date"/>
+      <RU value="Дата проведения"/>
+    </WORD>
+    <WORD value="TOURNAMENT_EXPORT">
+      <EN value="Tournament Export"/>
+      <RU value="Экспортировать"/>
+    </WORD>
+    <WORD value="TOURNAMENT_FILE_FILTER">
+      <EN value="Tournament export files|*.txml"/>
+      <RU value="Файлы экспорта турниров|*.txml"/>
+    </WORD>
+    <WORD value="TOURNAMENT_INFO">
+      <EN value="Tournament Information"/>
+      <RU value="Информация о турнире"/>
+    </WORD>
+    <WORD value="TOURNAMENT_PLACE">
+      <EN value="Tournament Place"/>
+      <RU value="Место проведения"/>
+    </WORD>
+    <WORD value="TOURNAMENT_RESULTS">
+      <EN value="Tournament Results"/>
+      <RU value="Результаты турнира"/>
+    </WORD>
+    <WORD value="TOURNAMENT_TITLE">
+      <EN value="Tournament Title"/>
+      <RU value="Наименование турнира"/>
+    </WORD>
+    <WORD value="TRIAL">
+      <EN value="Trial version"/>
+      <RU value="пробная версия"/>
+    </WORD>
+    <WORD value="TRIAL_DATE">
+      <EN value="Trial version is available for use until "/>
+      <RU value="Пробная версия достуна до"/>
+    </WORD>
+    <WORD value="TRIAL_EXPIRE">
+      <EN value="Trial version expire date "/>
+      <RU value="Дата истечения пробной лицензии"/>
+    </WORD>
+    <WORD value="TRIAL_RESTRICTIONS">
+      <EN value="This function is available only after license activation."/>
+      <RU value="Эта функция доступна только после активации лицензии."/>
+    </WORD>
+    <WORD value="TYPE">
+      <EN value="Type"/>
+      <RU value="Тип"/>
+    </WORD>
+    <WORD value="TYPE_OF_SPORT">
+      <EN value="Type of Sport"/>
+      <RU value="Вид спорта"/>
+    </WORD>
+    <WORD value="UPDATE">
+      <EN value="Update"/>
+      <RU value="Обновить"/>
+    </WORD>
+    <WORD value="UPDATER">
+      <EN value="Updater"/>
+      <RU value="Обновление"/>
+    </WORD>
+    <WORD value="USERNAME">
+      <EN value="User name"/>
+      <RU value="Имя пользователя"/>
+    </WORD>
+    <WORD value="VS">
+      <EN value="vs."/>
+      <RU value=" - "/>
+    </WORD>
+    <WORD value="WINNER">
+      <EN value="Winner "/>
+      <RU value="Победитель "/>
+    </WORD>
+    <WORD value="WINNER_IS">
+      <EN value="Winner is "/>
+      <RU value="Победитель "/>
+    </WORD>
+    <WORD value="WRONG_PARAM_COUNT">
+      <EN value="Wrong param count"/>
+      <RU value="Неправильное количество параметров"/>
+    </WORD>
+    <WORD value="WRONG_PLAYER_NUMBER">
+      <EN value="Number of players qualified to the playoffs, does not matches with the size of the grid playoffs"/>
+      <RU value="Количество игроков, прошедших в следуюущий раун не совпадает с размером сетки плей-офф."/>
+    </WORD>
+    <WORD value="YES">
+      <EN value="Yes"/>
+      <RU value="Да"/>
+    </WORD>
+  </WORDS>
+</DICTIONARY>

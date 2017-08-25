@@ -1,0 +1,26 @@
+
+1. Указание БД
+	- Для компиляции с БД SQLite в проект TA.DB.Manager добавить макрос SQLITE
+	- Для компиляции с БД MS-SQL в проект TA.DB.Manager добавить макрос MSSQL
+
+2. Настройка Editions
+	- LIMITED
+	- STANDARD
+	- STANDARD_PLUS
+	- FEDITION
+	- FEDITION_PLUS
+	Соответствующую метку нужно добавить в проекты
+	- TA.Corel
+	- TA.Main
+	- TA.DB
+	- TA.DB.MsSql
+	- TA.DB.SQLite
+	- TA.RatingSystem
+	- TA.RatingSystem.Builder
+
+3. Указане BETA-версии
+	- BETA
+	Метку ставить в проектах
+	- TA.Corel
+	- TA.Main
+	- TA.DB.SQLite
