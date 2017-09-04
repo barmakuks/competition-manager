@@ -20,7 +20,7 @@ namespace TA.ExIm
                 FDate = File.GetLastAccessTime(pathToDatabase);
                 string cs = String.Format("Data Source={0};New=False;Version=3", pathToDatabase);
                 database = DatabaseManager.CreateDb(cs);
-                // 1 - Прочитать параметры                                
+                // 1 - Прочитать параметры
                 FAppGuid = new Guid(database.GetParamValue(0, "INSTANCE_GUID"));
                 // 2 - Прочитать список игроков
                 ImportPlayers();
@@ -33,10 +33,10 @@ namespace TA.ExIm
                         // 4.1.2 - Прочитать матчи
                 return true;
             }
-            catch (Exception) 
+            catch (Exception)
             {
                 return false;
-            }            
+            }
         }
 
         private void ImportPlayers()
@@ -66,10 +66,10 @@ namespace TA.ExIm
             FTournaments.Clear();
             TournamentList tours = new TournamentList();
             database.ReadTournamentList(tours);
-            foreach (Tournament tour in tours.Values) 
+            foreach (Tournament tour in tours.Values)
             {
                 database.ReadCompetitionList(tour);
-                foreach (Competition comp in tour.Competitions.Values) 
+                foreach (Competition comp in tour.Competitions.Values)
                 {
                     database.ReadCompetitionPlayersList(comp, CompetitionPlayerList.SortByField.SeedNo);
                     database.ReadCompetitionMatchesList(comp);

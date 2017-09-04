@@ -19,7 +19,7 @@ namespace TA.Main
         private static string sPublicKeyA = @"<RSAKeyValue><Modulus>pgc1UbrkY3beCTKFDdr/l//0d6qe6dwvG2sGHziVd1sh3+";
         private const string DATEFORMAT = "yyyyMMdd";
 #if FEDITION
-        public static Guid SoftwareGuid = new Guid("{dbe3f87b-0a24-48dd-beaf-d6a187a00449}");        
+        public static Guid SoftwareGuid = new Guid("{dbe3f87b-0a24-48dd-beaf-d6a187a00449}");
 #endif
 #if STANDARD
         public static Guid SoftwareGuid = new Guid("{dbe3f87b-0a24-48dd-beaf-d6a187a00448}");
@@ -28,16 +28,16 @@ namespace TA.Main
         public static Guid SoftwareGuid = new Guid("{dbe3f87b-0a24-48dd-beaf-d6a187a00449}");
 #endif*/
 
-        
+
         private static string sPublicKeyC = @"ve0xup2gwHrpMNBEWJCYzwtO56RpKXtsv+DXoGBpLBmLKX/";
-        private static string sPublicKeyD = @"ve0xup2gwHjsdLKJlkdjLKJlkjsLJlklkjiKJLKJlkLKlk/"; 
+        private static string sPublicKeyD = @"ve0xup2gwHjsdLKJlkdjLKJlkjsLJlklkjiKJLKJlkLKlk/";
         private static string sPublicKeyE = @"1rAE8QU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue>";
         // использовать ключ A+B+C+E
 
         /// <summary>
         /// Имя польователя
         /// </summary>
-        public static string UserName 
+        public static string UserName
         {
             get {
                 return DatabaseManager.CurrentDb.GetParamValue(0, "USERNAME");
@@ -49,7 +49,7 @@ namespace TA.Main
         /// <summary>
         /// Организация
         /// </summary>
-        public static string Organization 
+        public static string Organization
         {
             get {
                 return DatabaseManager.CurrentDb.GetParamValue(0, "ORGANIZATION");
@@ -61,7 +61,7 @@ namespace TA.Main
         /// <summary>
         /// e-mail пользователя для связи
         /// </summary>
-        public static string EMail 
+        public static string EMail
         {
             get
             {
@@ -86,9 +86,9 @@ namespace TA.Main
                 DatabaseManager.CurrentDb.SetParamValue(0, "EXP_DATE", value);
             }
         }
-        public static string LicenseExpireDateFormated 
+        public static string LicenseExpireDateFormated
         {
-            get { 
+            get {
                 string str = LicenseExpireDate;
                 if (str != "" && str.Length == 8)
                     return str.Substring(6, 2) + "-" + str.Substring(4, 2) + "-" + str.Substring(0, 4);
@@ -138,7 +138,7 @@ namespace TA.Main
                     str = DatabaseManager.CurrentDb.GetParamValue(0, "LIC_KEY" + i.ToString());
                     value = value + str;
                     i++;
-                } while (str != "");            
+                } while (str != "");
                 return value;
             }
             set
@@ -150,7 +150,7 @@ namespace TA.Main
                         DatabaseManager.CurrentDb.SetParamValue(0, "LIC_KEY" + i.ToString(), value.Substring(0, MAX_LENGHT));
                         value = value.Substring(MAX_LENGHT);
                     }
-                    else 
+                    else
                     {
                         DatabaseManager.CurrentDb.SetParamValue(0, "LIC_KEY" + i.ToString(), value);
                         value = "";
@@ -162,7 +162,7 @@ namespace TA.Main
         }
 
 
-        private string Dummy 
+        private string Dummy
         {
             get {
                 return sPublicKeyD;
@@ -174,18 +174,18 @@ namespace TA.Main
         /// </summary>
         /// <param name="licenseExpireDateString">дата истечения лицензии</param>
         /// <returns></returns>
-        private static string GetWinInfoHash(string licenseExpireDateString) 
+        private static string GetWinInfoHash(string licenseExpireDateString)
         {
             return CryptUtils.GetHash(licenseExpireDateString + SoftwareGuid.ToString() + Corel.EditionManager.EditionString + CryptUtils.GetHash(WinInfo.GetInfo()));
         }
         public static string ToXmlString()
         {
             return String.Format(@"<ActivationKey UserName='{0}' Organization='{1}' EMail='{2}' AppGuid='{3}' Edition='{4}' WinInfo='{5}' ExpireDate='{6}' InstanceGuid='{7}'/>",
-                UserName, Organization, EMail, SoftwareGuid.ToString(), 
+                UserName, Organization, EMail, SoftwareGuid.ToString(),
                 Corel.EditionManager.EditionString, CryptUtils.GetHash(WinInfo.GetInfo()), LicenseExpireDate, InstanceGuid);
         }
-        
-        /*static void ReadInfoFromRegistry() 
+
+        /*static void ReadInfoFromRegistry()
         {
             Utils.IniFile ini = Settings.IniFile;
             Organization = ini.GetString("Reginfo", "Organization", "");
@@ -196,28 +196,25 @@ namespace TA.Main
             LicenseKey = ini.GetString("Reginfo", "LicenseKey", "");
         }*/
         /*
-        public static void WriteUserInfoToRegistry() 
+        public static void WriteUserInfoToRegistry()
         {
-            
-            
+
+
             Utils.IniFile ini = Settings.IniFile;
             ini.Write("Reginfo", "Organization", Organization);
             ini.Write("Reginfo", "UserName", UserName);
             ini.Write("Reginfo", "EMail", EMail);
         }*/
         /*
-        static void WriteLicenseExpireDateToRegistry() 
+        static void WriteLicenseExpireDateToRegistry()
         {
             Utils.IniFile ini = Settings.IniFile;
             ini.Write("Reginfo", "ExpireDate", LicenseExpireDate);
             ini.Write("Reginfo", "ExpireDateKey", LicenseExpireDateKey);
         }*/
 
-        public static bool CheckRegistration() 
+        public static bool CheckRegistration()
         {
-#if DEBUG
-            return true;
-#endif
             TA.Corel.EditionManager.IsTrial = true; // будем считать, что это trial-версия
             if (LicenseExpireDate == "")//DateTime.MinValue.ToString(DATEFORMAT))
             { // Дата окончания срока лицензии не установлена, значит это первый запуск программы
@@ -226,32 +223,32 @@ namespace TA.Main
                     // Если БД не пустая, заначит это не первый запуск программы
                     // Просим пользователя зарегистрироваться
                     // Если пользователь откажется регистрироваться, программа завершится
-                    ShowRegistrationWindow(true);                    
+                    ShowRegistrationWindow(true);
                 }
-                else 
+                else
                 {
                     TA.Corel.EditionManager.IsTrial = true; // будем считать, что это trial-версия
                     // Устанавливаем дату окончания trial-периода
                     // сохраняем информацию в файл или БД
                     LicenseExpireDate = WinInfo.GetPageFileDate().AddMonths(1).ToString(DATEFORMAT);
                     InstanceGuid = Guid.NewGuid().ToString();
-                    // Формируем строку, подписывающую дату окончания срока действия 
+                    // Формируем строку, подписывающую дату окончания срока действия
                     // во избежаниие ручного изменения
-                    LicenseExpireDateKey = GetWinInfoHash(LicenseExpireDate + InstanceGuid);                    
+                    LicenseExpireDateKey = GetWinInfoHash(LicenseExpireDate + InstanceGuid);
                     //WriteLicenseExpireDateToRegistry();
                     WindowSkin.MessageBox.Show(Localizator.Dictionary.GetString("TRIAL_DATE"," ") + LicenseExpireDateFormated);
                 }
             }
-            else 
+            else
             { // Дата окончания срока действия лицензии уже установлена, значит это не первый запуск
                 if (LicenseKey != "")
                 { // Уже есть лицензия
                     if (CryptUtils.VerifySign(GetWinInfoHash(LicenseExpireDate + InstanceGuid), LicenseKey, sPublicKeyA + ImportPlayers.sPublicKeyB + sPublicKeyC + sPublicKeyE))
                     { // Это правильная лицензия
 
-                        if (LicenseExpireDate.CompareTo(WinInfo.GetCurrentDate().AddMonths(1).ToString(DATEFORMAT)) > 0) 
+                        if (LicenseExpireDate.CompareTo(WinInfo.GetCurrentDate().AddMonths(1).ToString(DATEFORMAT)) > 0)
                         {
-                            TA.Corel.EditionManager.IsTrial = false; 
+                            TA.Corel.EditionManager.IsTrial = false;
                             return true; // До окончания срока действия лицензии осталось больше 30 дней
                         }
 
@@ -266,7 +263,7 @@ namespace TA.Main
                             ShowRegistrationWindow(false); // Срок действия лицензии скоро закончится, предлагаем продлить. Если нет, то продолжаем выполнение программы
                         }
                     }
-                    else 
+                    else
                     { // Целостность лицензии нарушена
                         TA.Corel.EditionManager.IsTrial = true;
                         ShowRegistrationWindow(true); // предлагаем Продлить. Если нет, то завершаем приложение
@@ -275,7 +272,7 @@ namespace TA.Main
                         //throw new Exception(Localizator.Dictionary.GetString("ACTIVATION_KEY_CORRUPTED"));
                     }
                 }
-                else 
+                else
                 { // Лицензии еще нет, значит это trial-период
                     TA.Corel.EditionManager.IsTrial = true;
                     if (GetWinInfoHash(LicenseExpireDate + InstanceGuid) == LicenseExpireDateKey)
@@ -292,7 +289,7 @@ namespace TA.Main
                                 ShowRegistrationWindow(false);
                         }
                     }
-                    else 
+                    else
                     { // Подпись под датой окончания лицензии нарушена
                       // просим зарегистрироваться, иначе завершаем приложение
                         ShowRegistrationWindow(true);
@@ -317,26 +314,26 @@ namespace TA.Main
                 if (result)
                     TA.Corel.EditionManager.IsTrial = false;
             }
-            if (closeIfFail && !result) 
+            if (closeIfFail && !result)
             {
                 WindowSkin.MessageBox.Show(Localizator.Dictionary.GetString("LICENSE_EXPIRED"));
                 throw new Exception(Localizator.Dictionary.GetString("LIC_EXPIRED"));
                 //Thread.CurrentThread.Abort();
-            }            
+            }
         }
 
-        static LicenseManager() 
+        static LicenseManager()
         {
             //ReadInfoFromRegistry();
         }
 
-        public static bool AddRegistrationKey(string regKey) 
+        public static bool AddRegistrationKey(string regKey)
         {
             XmlDocument doc = new XmlDocument();
             doc.LoadXml(regKey);
             string date = doc.DocumentElement.Attributes["expireDate"].Value;
             string sign = doc.DocumentElement.Attributes["sign"].Value;
-            if (CryptUtils.VerifySign(GetWinInfoHash(date + InstanceGuid), sign, sPublicKeyA + ImportPlayers.sPublicKeyB + sPublicKeyC + sPublicKeyE)) 
+            if (CryptUtils.VerifySign(GetWinInfoHash(date + InstanceGuid), sign, sPublicKeyA + ImportPlayers.sPublicKeyB + sPublicKeyC + sPublicKeyE))
             {
                 LicenseExpireDate = date;
                 LicenseExpireDateKey = GetWinInfoHash(date + InstanceGuid);

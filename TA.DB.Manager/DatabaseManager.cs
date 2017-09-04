@@ -14,27 +14,27 @@ namespace TA.DB.Manager
     public class DatabaseManager
     {
         private static DatabaseInterface FDatabase = null;
-        public static DatabaseInterface CurrentDb 
+        public static DatabaseInterface CurrentDb
         {
             get {
                 return FDatabase;
             }
-            set { 
+            set {
             }
         }
-        public static void CreateCurrentDb(string aConnetionString) 
+        public static void CreateCurrentDb(string aConnetionString)
         {
         #if DEBUG
             string fileName = "data.cmdb";
         #elif FEDITION
-            string fileName = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData), @"Competition Manager\data.cmdb");        
+            string fileName = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData), @"Competition Manager\data.cmdb");
         #elif STANDARD
-            string fileName = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData), @"Competition Manager\data_std.cmdb");        
+            string fileName = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData), @"Competition Manager\data_std.cmdb");
         #endif
             aConnetionString = "Data Source = " + fileName + ";";
             FDatabase = CreateDb(aConnetionString);
         }
-        public static DatabaseInterface CreateDb(string aConnetionString) 
+        public static DatabaseInterface CreateDb(string aConnetionString)
         {
         #if MSSQL
             reutrn new MsSqlDatabase(aConnetionString);

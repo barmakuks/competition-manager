@@ -28,10 +28,10 @@ namespace TA.Main
 #endif
 #if DEBUG
                 WindowSkin.Palette.CurrentSkin = WindowSkin.WindowsSkins.Green;
-#endif                
-                string DBT = ConfigurationManager.AppSettings["DatabaseType"];                
+#endif
+                string DBT = ConfigurationManager.AppSettings["DatabaseType"];
                 DatabaseManager.CreateCurrentDb(ConfigurationManager.AppSettings["ConnectionString"]);
-                
+
                 string lang = Settings.Language;
                 Localizator.Dictionary.CreateDictionary(lang);
                 WindowSkin.MessageBox.STR_ABORT = Localizator.Dictionary.GetString("ABORT");
@@ -50,19 +50,11 @@ namespace TA.Main
                 //CheckUpdate.CheckLastVersion(new DateTime(2009,12,12), mainForm);
                 Application.Run(mainForm);
             }
-            catch (Exception ex) 
+            catch (Exception ex)
             {
                 ErrorViewer.ErrorView.Show(ex);
             }
-            /*else
-            {
-                WindowSkin.MessageBox.Show("Программа не зарегистрирована. Превышен лимит запусков.");
-                fRegistationInfo.ShowRegistration();
-                regInfo = Registrator.RegInfo.Read();
-                if(regInfo.IsRegistered)
-                    Application.Run(new fMain());
-            }*/
-            
+
         }
     }
 }

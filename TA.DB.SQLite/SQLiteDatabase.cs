@@ -13,13 +13,13 @@ namespace TA.DB.SQLite
     {
         #region Public Properties
         private string ConnectionString = "";
-        public SQLiteDatabase(string connetionString) 
+        public SQLiteDatabase(string connetionString)
         {
             ConnectionString = connetionString;
         }
         public string[] CompetitionTypes
         {
-            get 
+            get
             {
                 try
                 {
@@ -34,6 +34,7 @@ namespace TA.DB.SQLite
                         string str = Convert.ToString(reader["Description"]);
                         list.Add(str);
                     }
+                    reader.Close();
                     return (string[])(list.ToArray(typeof(string)));
                 }
                 catch (Exception ex)
@@ -54,11 +55,9 @@ namespace TA.DB.SQLite
                     command.CommandType = System.Data.CommandType.Text;
                     connection.Open();
                     SQLiteDataReader reader = command.ExecuteReader();
-                    if (reader.Read()) 
-                    {
-                        return reader[0].ToString() == "0";
-                    }
-                    return false;
+                    bool result = reader.Read() && reader[0].ToString() == "0";
+                    reader.Close();
+                    return result;
                 }
                 catch (Exception ex)
                 {
@@ -112,11 +111,12 @@ namespace TA.DB.SQLite
                     info.DateBegin = Convert.ToDateTime(reader["DateBegin"]);
                     info.DateEnd = Convert.ToDateTime(reader["DateEnd"]);
                     list.Add(info.Id, tournament);
-#if BETA        
+#if BETA
                     if (list.Count >= EditionManager.MaxTournamentCount)
                         return true;
 #endif
                 }
+                reader.Close();
                 return true;
             }
             catch (Exception ex)
@@ -143,9 +143,9 @@ namespace TA.DB.SQLite
                 else
                 {
                     sql = @"update Tournaments  set
-                        		[Name] = @Name, 
-		                        Place = @place, 
-		                        DateBegin = @DateBegin, 
+                        		[Name] = @Name,
+		                        Place = @place,
+		                        DateBegin = @DateBegin,
 		                        DateEnd = @DateEnd
 		                        where [id] = @id";
                 }
@@ -165,6 +165,7 @@ namespace TA.DB.SQLite
                     SQLiteDataReader reader = command.ExecuteReader();
                     if (reader.Read())
                         info.Id = Convert.ToInt32(reader["Id"]);
+                    reader.Close();
                 }
 
                 return true;
@@ -221,11 +222,13 @@ namespace TA.DB.SQLite
                 command.CommandType = System.Data.CommandType.Text;
                 connection.Open();
                 SQLiteDataReader reader = command.ExecuteReader();
+                string result = "";
                 if (reader.Read())
                 {
-                    return Convert.ToString(reader["paramValue"]);
+                    result = Convert.ToString(reader["paramValue"]);
                 }
-                return "";
+                reader.Close();
+                return result;
             }
             catch (Exception ex)
             {
@@ -279,6 +282,7 @@ namespace TA.DB.SQLite
                 {
                     properties.Add(Convert.ToString(reader["ParamName"]), Convert.ToString(reader["ParamValue"]));
                 }
+                reader.Close();
                 return true;
             }
             catch (Exception ex)
@@ -317,7 +321,7 @@ namespace TA.DB.SQLite
                 connection.Close();
             }
         }
-        
+
         public bool CompetitionInfoSave(TA.Corel.CompetitionInfo info)
         {
             SQLiteConnection connection = new SQLiteConnection(ConnectionString);
@@ -333,10 +337,10 @@ namespace TA.DB.SQLite
                 {
                     sql = @"update Competitions  set
 		                    TournamentId = @tournamentId,
-		                    GameType = @GameType, 
-		                    ChangesRating = @ChangesRating, 
-		                    [Name] = @Name, 
-		                    Type = @Type, 
+		                    GameType = @GameType,
+		                    ChangesRating = @ChangesRating,
+		                    [Name] = @Name,
+		                    Type = @Type,
 		                    Status = @status
 		                    where [id] = @id";
                 }
@@ -363,6 +367,7 @@ namespace TA.DB.SQLite
                     {
                         info.Id = Convert.ToInt32(reader["Id"]);
                     }
+                    reader.Close();
                 }
                 connection.Close();
                 return WriteProperties(info.Id, info.Properties);
@@ -413,6 +418,8 @@ namespace TA.DB.SQLite
                         return true;
 #endif
                 }
+                reader.Close();
+
                 return true;
             }
             catch (Exception ex)
@@ -505,6 +512,8 @@ namespace TA.DB.SQLite
                 if (players.Count > EditionManager.MaxPlayers)
                     throw new Exception("Exceeded the limit of players.");
 #endif
+                reader.Close();
+
                 return true;
             }
             catch (Exception ex)
@@ -532,9 +541,9 @@ namespace TA.DB.SQLite
             try
             {
                 SQLiteCommand command = new SQLiteCommand(@"insert into Matches (CompetitionId, MatchLabel, PlayerA_Id, PlayerB_Id, PlayerA_Points, PlayerB_Points, Winner_Id, Winners_MatchLabel, Loosers_MatchLabel)
-                        select @competition_id , MatchLabel, -1, -1, 0, 0,-1, Winners_MatchLabel, Loosers_MatchLabel 
+                        select @competition_id , MatchLabel, -1, -1, 0, 0,-1, Winners_MatchLabel, Loosers_MatchLabel
                         from SeedTemplate st, vCompetitions vc
-                        where st.CompetitionType = @competition_type and [Id] = @competition_id 
+                        where st.CompetitionType = @competition_type and [Id] = @competition_id
                         and st.PlayerCount >= vc.PlayerCount and st.PlayerCount < vc.PlayerCount * 2;", connection);
                 command.CommandType = System.Data.CommandType.Text;
                 connection.Open();
@@ -587,6 +596,8 @@ namespace TA.DB.SQLite
                     InitHasMatchesForPlayer(aCompetition, match.PlayerA.Id);
                     InitHasMatchesForPlayer(aCompetition, match.PlayerB.Id);
                 }
+                reader.Close();
+
                 aCompetition.InitializeMatches();
                 return true;
             }
@@ -600,9 +611,9 @@ namespace TA.DB.SQLite
                 connection.Close();
             }
         }
-        private void InitHasMatchesForPlayer(Competition aCompetition, int playerId) 
+        private void InitHasMatchesForPlayer(Competition aCompetition, int playerId)
         {
-            if (playerId > 0) 
+            if (playerId > 0)
             {
                 if (aCompetition.Players.ContainsKey(playerId))
                     aCompetition.Players[playerId].HasMatches = true;
@@ -616,16 +627,16 @@ namespace TA.DB.SQLite
             SQLiteConnection connection = new SQLiteConnection(ConnectionString);
             try
             {
-                string sql_format = @"insert into Matches 
-                                    (CompetitionId, MatchLabel, PlayerA_Id, PlayerB_Id, PlayerA_Points, PlayerA_Tag, 
-                                    PlayerB_Points, PlayerB_Tag, 
+                string sql_format = @"insert into Matches
+                                    (CompetitionId, MatchLabel, PlayerA_Id, PlayerB_Id, PlayerA_Points, PlayerA_Tag,
+                                    PlayerB_Points, PlayerB_Tag,
                                     Winner_Id, Tag, Loosers_MatchLabel, Winners_MatchLabel, Title)
 		                    values ({0}, '{1}', {2}, {3}, {4}, {5}, {6}, {7}, {8}, {9}, '{10}','{11}','{12}')";
 
-                string sql = String.Format(sql_format, competitionId /*0*/, match.Label /*1*/, 
-                    match.PlayerA.Id /*2*/, match.PlayerB.Id /*3*/, 
-                    match.PlayerA.Points /*4*/, match.PlayerA.Tag /*5*/, 
-                    match.PlayerB.Points /*6*/, match.PlayerB.Tag /*7*/, 
+                string sql = String.Format(sql_format, competitionId /*0*/, match.Label /*1*/,
+                    match.PlayerA.Id /*2*/, match.PlayerB.Id /*3*/,
+                    match.PlayerA.Points /*4*/, match.PlayerA.Tag /*5*/,
+                    match.PlayerB.Points /*6*/, match.PlayerB.Tag /*7*/,
                     match.WinnerId /*8*/, match.Tag /*9*/,
                     match.Loosers_MatchLabel.Label /*10*/, match.Winners_MatchLabel.Label/*11*/, match.Title/*12*/);
                 SQLiteCommand command = new SQLiteCommand(sql, connection);
@@ -640,6 +651,8 @@ namespace TA.DB.SQLite
                 {
                     match.Id = Convert.ToInt32(reader["Id"]);
                 }
+                reader.Close();
+
                 return true;
             }
             catch (Exception ex)
@@ -652,7 +665,7 @@ namespace TA.DB.SQLite
                 connection.Close();
             }
         }
-        public bool DeleteMatch(int match_id) 
+        public bool DeleteMatch(int match_id)
         {
             SQLiteConnection connection = new SQLiteConnection(ConnectionString);
             try
@@ -737,7 +750,7 @@ namespace TA.DB.SQLite
         #endregion
 
         #region Player Functions
-        public bool TryToDeletePlayer(int playerId) 
+        public bool TryToDeletePlayer(int playerId)
         {
             SQLiteConnection connection = new SQLiteConnection(ConnectionString);
             try
@@ -747,10 +760,14 @@ namespace TA.DB.SQLite
                 command.CommandType = System.Data.CommandType.Text;
                 connection.Open();
                 SQLiteDataReader reader = command.ExecuteReader();
-                if (reader.Read()) 
+                if (reader.Read())
                 {
+                    reader.Close();
+
                     return false;
                 }
+                reader.Close();
+
                 sql = String.Format("DELETE FROM StartRatingList WHERE playerId = {0}; DELETE FROM Players WHERE Id = {0};", playerId);
                 command = new SQLiteCommand(sql, connection);
                 command.ExecuteNonQuery();
@@ -799,12 +816,12 @@ namespace TA.DB.SQLite
                 {
                     if(info.Identifier == Guid.Empty)
                         info.Identifier = Guid.NewGuid();
-                }                    
+                }
                 else
                 {
                     command.Parameters.Add(new SQLiteParameter("@id", info.Id));
                 }
-                    
+
                 command.Parameters.Add(new SQLiteParameter("@Identifier", info.Identifier.ToString()));
                 command.Parameters.Add(new SQLiteParameter("@FirstName", info.FirstName));
                 command.Parameters.Add(new SQLiteParameter("@PatronymicName", info.PatronymicName));
@@ -821,6 +838,8 @@ namespace TA.DB.SQLite
                     SQLiteDataReader reader = command.ExecuteReader();
                     if (reader.Read())
                         info.Id = Convert.ToInt32(reader["Id"]);
+                    reader.Close();
+
                     sql = @"insert into StartRatingList(GameType, PlayerId, RatingStart)
 		                    select Id, @id, 1500 from GameTypes";
                     command = new SQLiteCommand(sql, connection);
@@ -850,7 +869,7 @@ namespace TA.DB.SQLite
             SQLiteConnection connection = new SQLiteConnection(ConnectionString);
             try
             {
-                string sql = String.Format(@"select * from Players 
+                string sql = String.Format(@"select * from Players
                                 where Id in (select PlayerId from StartRatingList where GameType = {0} and IsActive = 1)
                                 order by LastName, FirstName", gameType);
                 if (gameType == 0)
@@ -873,13 +892,15 @@ namespace TA.DB.SQLite
                     info.EMail = reader["EMail"].ToString();
                     info.Phone = (reader["Phone"]).ToString();
                     info.Country = (reader["Country"]).ToString();
-                    if (info.Country != "" && !Globals.Countries.Contains(info.Country)) 
+                    if (info.Country != "" && !Globals.Countries.Contains(info.Country))
                     {
                         Globals.Countries.Add(info.Country);
                     }
                     info.City = reader["City"].ToString();
                     list.Add(info.Identifier, info);
                 }
+                reader.Close();
+
                 return true;
             }
             catch (Exception ex)
@@ -923,7 +944,7 @@ namespace TA.DB.SQLite
                 else
                 {
                     command = new SQLiteCommand(@"update CompetitionPlayers  set
-			                            SeedNo = @seedNo, 
+			                            SeedNo = @seedNo,
 			                            Rating = @rating,
                                         StartPoints = @StartPoints,
                                         RebuyPoints = @RebuyPoints
@@ -1019,6 +1040,8 @@ namespace TA.DB.SQLite
                     string name = Convert.ToString(reader["Name"]);
                     list.Add(id, new TypeOfSport(id, name));
                 }
+                reader.Close();
+
                 return true;
             }
             catch (Exception ex)
@@ -1031,12 +1054,12 @@ namespace TA.DB.SQLite
                 connection.Close();
             }
         }
-        public bool SaveTypeOfSport(TypeOfSport sport) 
+        public bool SaveTypeOfSport(TypeOfSport sport)
         {
             SQLiteConnection connection = new SQLiteConnection(ConnectionString);
             try
             {
-                string sql_select = String.Format("SELECT * FROM GameTypes WHERE Id = {0}", sport.Id);                
+                string sql_select = String.Format("SELECT * FROM GameTypes WHERE Id = {0}", sport.Id);
                 string sql_insert = String.Format("INSERT INTO GameTypes (Id, Name) VALUES({0},'{1}'); INSERT INTO StartRatingList (GameType, PlayerId, RatingStart, IsActive) select {0}, pl.Id, 1500, 1 from Players pl;", sport.Id, sport.Name);
                 string sql_update = String.Format("UPDATE GameTypes SET Name ='{1}' WHERE Id = {0}", sport.Id, sport.Name);
                 SQLiteCommand command = new SQLiteCommand(sql_select, connection);
@@ -1064,7 +1087,7 @@ namespace TA.DB.SQLite
                 connection.Close();
             }
         }
-        public bool DeleteTypeOfSport(int id) 
+        public bool DeleteTypeOfSport(int id)
         {
             SQLiteConnection connection = new SQLiteConnection(ConnectionString);
             try
@@ -1074,10 +1097,12 @@ namespace TA.DB.SQLite
                 SQLiteCommand command = new SQLiteCommand(sql_check, connection);
                 command.CommandType = System.Data.CommandType.Text;
                 connection.Open();
-                SQLiteDataReader reader = (SQLiteDataReader)command.ExecuteReader();                
+                SQLiteDataReader reader = (SQLiteDataReader)command.ExecuteReader();
                 if (reader.Read())
                 {
-                    return false;                    
+                    reader.Close();
+
+                    return false;
                 }
                 reader.Close();
                 command = new SQLiteCommand(sql_delete, connection);
@@ -1138,6 +1163,8 @@ namespace TA.DB.SQLite
                     info.IsActive = Convert.ToBoolean(reader["IsActive"]);
                     info.RatingBegin = Convert.ToInt32(reader["RatingStart"]);
                 }
+                reader.Close();
+
                 return info;
             }
             catch (Exception ex)
@@ -1168,9 +1195,11 @@ namespace TA.DB.SQLite
                 SQLiteCommand command = insert_command;
                 if (reader.Read()) {
                     command = update_command;
-                }                
+                }
+                reader.Close();
+
                 command.CommandType = System.Data.CommandType.Text;
-                
+
                 command.Parameters.Add(new SQLiteParameter("@gametype", info.GameType));
                 command.Parameters.Add(new SQLiteParameter("@PlayerId", info.PlayerId));
                 command.Parameters.Add(new SQLiteParameter("@ratingbegin", info.RatingBegin));
@@ -1217,6 +1246,8 @@ namespace TA.DB.SQLite
                     player.City = reader["City"].ToString();
                     list.Add(player);
                 }
+                reader.Close();
+
                 return true;
             }
             catch (Exception ex)
@@ -1352,6 +1383,8 @@ namespace TA.DB.SQLite
                     startRatingNode.Attributes.Append(doc.CreateAttribute("IsActive")).Value = Convert.ToString(reader["IsActive"]);
                     playerNode.AppendChild(startRatingNode);
                 }
+                reader.Close();
+
                 RootNode.AppendChild(playersNode);
                 return doc;
             }
